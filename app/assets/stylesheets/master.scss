@@ -1,0 +1,25 @@
+@import 'color';
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: $main-bg-color;
+  text-align: center;
+}
+.btn{
+  padding: 4px 8px;
+  color: #fff;
+  display: inline-block;
+  opacity: 0.7;
+  border-radius: 3px;
+  &:hover{
+    opacity: 1.0;
+  }
+}
+.pink{
+  background-color: $pink;
+}

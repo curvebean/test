@@ -1,7 +1,25 @@
 <div class="question-card">
-  <img src="ruby.png" width="50" height="50">
-  <p>language: <%= question.language%></p>
-  <textarea name="name" rows="4" cols="40">
+  <div class="card-title">
+    <div class="language">
+      <img src="ruby.png">
+      <a href="#"><%= question.language%></a>
+    </div>
+    <div class="question-title">
+      <h2>Ruby:これだけは抑えて！</h2>
+    </div>
+  </div>
+  <textarea name="name" rows="4" cols="60">
     <%= question.content %>
   </textarea>
+  <div class="card-icons">
+    <div class="card-icon smile">
+      <i class="far fa-smile"></i>12
+      <p>いいね</p>
+    </div>
+    <div class="card-icon frown">
+      <i class="far fa-frown"></i>53
+      <p>分からない</p>
+    </div>
+    <a href="" class="btn pink">答えるぜ！</a>
+  </div>
 </div>
